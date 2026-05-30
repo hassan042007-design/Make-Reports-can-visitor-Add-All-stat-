@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liability Release - Red Sea Diving Safari</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+        <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    </div>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html" class="navbar-brand">
+                <div class="logo-icon">🤿</div>
+                <div><div class="brand-text">Red Sea Diving Safari</div><div class="brand-sub">Marsa Shagra • Marsa Nakari • Wadi Lahami</div></div>
+            </a>
+            <div class="navbar-actions">
+                <a href="index.html" class="nav-home" data-en="← Home" data-ru="← Домой" data-it="← Home" data-es="← Inicio" data-de="← Startseite" data-fr="← Accueil" data-ar="الرئيسية →">← Home</a>
+                <div class="lang-selector-custom">
+                    <div class="lang-current" onclick="toggleLangDropdown()">
+                        <span class="lang-flag">🇬🇧</span> <span class="lang-code">EN</span> <span class="lang-arrow">▼</span>
+                    </div>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <div class="lang-option" onclick="setLang('en')">🇬🇧 English</div>
+                        <div class="lang-option" onclick="setLang('fr')">🇫🇷 Français</div>
+                        <div class="lang-option" onclick="setLang('ar')">🇸🇦 عربي</div>
+                        <div class="lang-option" onclick="setLang('ru')">🇷🇺 Русский</div>
+                        <div class="lang-option" onclick="setLang('it')">🇮🇹 Italiano</div>
+                        <div class="lang-option" onclick="setLang('es')">🇪🇸 Español</div>
+                        <div class="lang-option" onclick="setLang('de')">🇩🇪 Deutsch</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-container">
+        <div class="page-header fade-in">
+            <span class="page-icon">📜</span>
+            <h1 data-en="Liability Release and Assumption of Risk" data-ru="Освобождение от ответственности и принятие риска" data-it="Esonero da responsabilità e assunzione dei rischi" data-es="Exención de Responsabilidad y Asunción de Riesgos" data-de="Haftungsausschluss und Risikoübernahme" data-fr="Décharge de Responsabilité et Reconnaissance de Risque" data-ar="إخلاء المسؤولية وتحمل المخاطر">Liability Release and Assumption of Risk</h1>
+            <p class="subtitle" data-en="Please review all safety information and diving details below" data-ru="Пожалуйста, ознакомьтесь с правилами безопасности" data-it="Si prega di rivedere tutte le informazioni di sicurezza" data-es="Revise toda la información de seguridad" data-de="Bitte überprüfen Sie alle Sicherheitsinformationen" data-fr="Veuillez consulter toutes les informations de sécurité ci-dessous" data-ar="يرجى مراجعة جميع معلومات السلامة وتفاصيل الغوص أدناه">Please review all safety information and diving details below</p>
+        </div>
+
+        <!-- Diving Info Choices -->
+        <div class="policy-card fade-in">
+            <h3>🏊 <span data-en="Diving Information" data-ru="Информация о дайвинге" data-it="Informazioni Immersione" data-es="Información de Buceo" data-de="Tauchinformationen" data-fr="Informations de Plongée" data-ar="معلومات الغوص">Diving Information</span></h3>
+            <div class="diving-info-grid">
+                <div class="diving-info-item">
+                    <div class="info-label" data-en="Diving Card" data-ru="Дайвинг-карта" data-it="Scheda Immersione" data-es="Tarjeta de Buceo" data-de="Tauchkarte" data-fr="Carte de Plongée" data-ar="بطاقة الغوص">Diving Card</div>
+                    <div class="info-choices">
+                        <button class="info-choice" data-en="Yes" data-ru="Да" data-it="Sì" data-es="Sí" data-de="Ja" data-fr="Oui" data-ar="نعم">Yes</button>
+                        <button class="info-choice" data-en="No" data-ru="Нет" data-it="No" data-es="No" data-de="Nein" data-fr="Non" data-ar="لا">No</button>
+                    </div>
+                </div>
+                <div class="diving-info-item">
+                    <div class="info-label" data-en="Pad Lock" data-ru="Замок" data-it="Lucchetto" data-es="Candado" data-de="Vorhängeschloss" data-fr="Cadenas" data-ar="قفل">Pad Lock</div>
+                    <div class="info-choices">
+                        <button class="info-choice" data-en="Yes" data-ru="Да" data-it="Sì" data-es="Sí" data-de="Ja" data-fr="Oui" data-ar="نعم">Yes</button>
+                        <button class="info-choice" data-en="No" data-ru="Нет" data-it="No" data-es="No" data-de="Nein" data-fr="Non" data-ar="لا">No</button>
+                    </div>
+                </div>
+                <div class="diving-info-item">
+                    <div class="info-label" data-en="Regulator / Detendeur" data-ru="Регулятор" data-it="Erogatore" data-es="Regulador" data-de="Atemregler" data-fr="Détendeur" data-ar="المنظم">Regulator / Detendeur</div>
+                    <div class="info-choices">
+                        <button class="info-choice">DIN</button>
+                        <button class="info-choice">INT</button>
+                    </div>
+                </div>
+                <div class="diving-info-item">
+                    <div class="info-label" data-en="Accommodation Type" data-ru="Тип размещения" data-it="Tipo di alloggio" data-es="Tipo de alojamiento" data-de="Unterkunftsart" data-fr="Type d'Hébergement" data-ar="نوع الإقامة">Accommodation Type</div>
+                    <div class="info-choices">
+                        <button class="info-choice" data-en="Tent" data-ru="Палатка" data-it="Tenda" data-es="Carpa" data-de="Zelt" data-fr="Tente" data-ar="خيمة">Tent</button>
+                        <button class="info-choice" data-en="Hut" data-ru="Хижина" data-it="Capanna" data-es="Cabaña" data-de="Hütte" data-fr="Hutte" data-ar="كوخ">Hut</button>
+                        <button class="info-choice" data-en="Chalet" data-ru="Шале" data-it="Chalet" data-es="Chalet" data-de="Chalet" data-fr="Chalet" data-ar="شاليه">Chalet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Environmental Responsibility -->
+        <div class="policy-card fade-in">
+            <h3>🐠 <span data-en="Environmental Responsibility" data-ru="Экологическая ответственность" data-it="Responsabilità Ambientale" data-es="Responsabilidad Ambiental" data-de="Umweltverantwortung" data-fr="Responsabilité Environnementale" data-ar="المسؤولية البيئية">Environmental Responsibility</span></h3>
+            <p data-en="Each participant is to provide his own insurance. Respect and protect the Coral Reef and Marine life. Do not touch or collect live or dead animal or shell either from the sea or the beach." data-ru="Уважайте и защищайте коралловый риф. Не прикасайтесь к кораллам." data-it="Rispetta e proteggi la barriera corallina. Non toccare." data-es="Respete y proteja el arrecife de coral. No toque." data-de="Respektieren und schützen Sie das Korallenriff. Nicht berühren." data-fr="Chaque participant est responsable de son assurance. Respectez et protégez le récif corallien et la vie marine. Merci de ne pas toucher les coraux ou les poissons, de ne pas ramasser les coquillages sous l'eau ou sur la plage." data-ar="يجب على كل مشارك توفير تأمينه الخاص. احترم واحمِ الشعاب المرجانية والحياة البحرية. لا تلمس أو تجمع الحيوانات أو الأصداف سواء من البحر أو الشاطئ.">Each participant is to provide his own insurance. Respect and protect the Coral Reef and Marine life. Do not touch or collect live or dead animal or shell either from the sea or the beach.</p>
+        </div>
+
+        <!-- Liability Declaration -->
+        <div class="policy-card fade-in">
+            <h3>✅ <span data-en="By Acknowledging This, You Declare That You:" data-ru="Подтверждая это, вы заявляете, что:" data-it="Confermando questo, dichiari di:" data-es="Al confirmar esto, declara que:" data-de="Durch die Bestätigung erklären Sie, dass:" data-fr="En signant cette décharge, vous déclarez que vous :" data-ar="بالإقرار بهذا، تعلن أنك:">By Acknowledging This, You Declare That You:</span></h3>
+            <ul class="liability-list">
+                <li data-en="Recently underwent a medical examination and were found fit for diving (a medical statement is mandatory)." data-ru="Недавно прошел медосмотр и признан годным." data-it="Recentemente sottoposto a visita medica e ritenuto idoneo." data-es="Recientemente se sometió a un examen médico y es apto para bucear." data-de="Kürzlich ärztlich untersucht und für tauchtauglich befunden." data-fr="Avez subi récemment une visite médicale et avez été déclaré apte à plonger (Certificat médical nécessaire)." data-ar="خضعت مؤخراً لفحص طبي وتبين أنك لائق للغوص (شهادة طبية إلزامية).">Recently underwent a medical examination and were found fit for diving (a medical statement is mandatory).</li>
+                <li data-en="Do not suffer from any chronic disease (such as diseases concerning the blood circulatory system or respiratory system)." data-ru="Не страдаете какими-либо хроническими заболеваниями." data-it="Non soffri di malattie croniche." data-es="No padecer ninguna enfermedad crónica." data-de="Nicht an chronischen Krankheiten leiden." data-fr="Ne souffrez d'aucune maladie chronique (ex.: système respiratoire ou circulatoire)." data-ar="لا تعاني من أي مرض مزمن (مثل أمراض الجهاز الدوري أو التنفسي).">Do not suffer from any chronic disease (such as diseases concerning the blood circulatory system or respiratory system).</li>
+                <li data-en="Will plan your dives within the no-decompression limit according to the dive table or diving computer." data-ru="Планируйте бездекомпрессионные погружения." data-it="Pianifica immersioni senza decompressione." data-es="Planifique inmersiones sin descompresión." data-de="Planen Sie Nullzeittauchgänge." data-fr="Allez planifier vos plongées dans la limite des courbes de sécurité indiquées par les tables de plongée et/ou des ordinateurs de plongée." data-ar="ستخطط لغطساتك ضمن حدود عدم تخفيف الضغط وفقاً لجداول الغوص أو كمبيوتر الغوص.">Will plan your dives within the no-decompression limit according to the dive table or diving computer.</li>
+                <li data-en="Will dive at a depth that does not exceed the recommended depth-limit with respect to your diving experience, under no circumstances exceeding 40m." data-ru="Глубина не более 40м." data-it="Profondità massima 40m." data-es="Profundidad máxima 40m." data-de="Maximale Tiefe 40m." data-fr="Allez planifier vos plongées en respectant la limite de non-décompression. Respectez la limite des 40 m." data-ar="ستغوص على عمق لا يتجاوز حد العمق الموصى به بالنسبة لخبرتك في الغوص، ولا يتجاوز 40 متراً بأي حال.">Will dive at a depth that does not exceed the recommended depth-limit with respect to your diving experience, under no circumstances exceeding 40m.</li>
+                <li data-en="Will obey the orders of the diving instructor or base manager." data-ru="Подчиняться инструктору." data-it="Obbedire all'istruttore." data-es="Obedecer al instructor." data-de="Befolgen Sie die Anweisungen des Tauchlehrers." data-fr="Respectez et suivez les conseils des instructeurs et encadrant du Centre." data-ar="ستلتزم بتعليمات مدرب الغوص أو مدير القاعدة.">Will obey the orders of the diving instructor or base manager.</li>
+                <li data-en="Will never dive alone." data-ru="Никогда не погружайтесь в одиночку." data-it="Non immergerti mai da solo." data-es="Nunca bucee solo." data-de="Tauchen Sie niemals allein." data-fr="Ne jamais plonger seul." data-ar="لن تغوص أبداً بمفردك.">Will never dive alone.</li>
+            </ul>
+        </div>
+
+        <!-- Buddy Diving -->
+        <div class="policy-card fade-in">
+            <h3>🤝 <span data-en="Buddy Diving" data-ru="Погружение с напарником" data-it="Immersione in coppia" data-es="Buceo en pareja" data-de="Buddy-Tauchen" data-fr="Plongée en Binôme" data-ar="الغوص مع شريك">Buddy Diving</span></h3>
+            <p data-en="There is no better security measure than to dive together with an experienced and reliable partner. Prior to diving, discuss the planned diving excursion with your partner and inform yourself about his/her diving experience. Check the most important hand-signals. Before entering the water perform a thorough buddy-check and during the dive do not lose sight of your partner." data-ru="Всегда погружайтесь с напарником." data-it="Immergersi in coppia è la migliore misura di sicurezza." data-es="Bucear en pareja es la mejor medida de seguridad." data-de="Tauchen Sie immer mit einem Partner." data-fr="Un critère important de sécurité est de plonger avec un partenaire expérimenté et responsable. Avant de plonger discutez avec lui du profil et des objectifs de la plongée et informez vous de son expérience. Vérifiez les signes. Avant de plonger vérifiez votre équipement et pendant la plongée maintenez le contact avec votre binôme." data-ar="لا يوجد إجراء أمان أفضل من الغوص مع شريك ذي خبرة وموثوق. قبل الغوص، ناقش خطة رحلة الغوص مع شريكك واستعلم عن خبرته في الغوص. تحقق من أهم إشارات اليد. قبل الدخول إلى الماء، قم بفحص شامل للشريك وأثناء الغوص لا تفقد شريكك من نظرك.">There is no better security measure than to dive together with an experienced and reliable partner. Prior to diving, discuss the planned diving excursion with your partner and inform yourself about his/her diving experience. Check the most important hand-signals. Before entering the water perform a thorough buddy-check and during the dive do not lose sight of your partner.</p>
+        </div>
+
+        <!-- Additional Safety Rules -->
+        <div class="policy-card fade-in">
+            <h3>⚠️ <span data-en="Additional Security Rules" data-ru="Дополнительные правила безопасности" data-it="Regole di Sicurezza Aggiuntive" data-es="Reglas de Seguridad Adicionales" data-de="Zusätzliche Sicherheitsregeln" data-fr="Règles de Sécurité Additionnelles" data-ar="قواعد السلامة الإضافية">Additional Security Rules</span></h3>
+            <ul class="safety-list">
+                <li data-en="Dive within your limitations (experience and physical condition)." data-ru="Погружайтесь в пределах своих возможностей." data-it="Immergiti nei tuoi limiti." data-es="Bucee dentro de sus limitaciones." data-de="Tauchen Sie innerhalb Ihrer Grenzen." data-fr="Plongez en respectant vos limites (expérience et condition physique)." data-ar="اغطس ضمن حدودك (الخبرة والحالة البدنية).">Dive within your limitations (experience and physical condition).</li>
+                <li data-en="Constantly monitor your instruments." data-ru="Постоянно следите за приборами." data-it="Monitora costantemente i tuoi strumenti." data-es="Monitoree constantemente sus instrumentos." data-de="Überwachen Sie ständig Ihre Instrumente." data-fr="Surveillez régulièrement vos instruments." data-ar="راقب أدواتك باستمرار.">Constantly monitor your instruments.</li>
+                <li data-en="Alternative air source, buoyancy control device, depth gauge and/or computer and tables are mandatory." data-ru="Альтернативный источник воздуха, компенсатор плавучести, глубиномер обязательны." data-it="Fonte d'aria alternativa, GAV, profondimetro e computer sono obbligatori." data-es="Fuente de aire alternativa, chaleco, profundímetro y computadora son obligatorios." data-de="Alternative Luftversorgung, Tarierjacket, Tiefenmesser sind obligatorisch." data-fr="Manomètre, source d'air de secours et gilet compensateur de flottabilité sont obligatoire." data-ar="مصدر هواء بديل، جهاز التحكم في الطفو، مقياس العمق و/أو الكمبيوتر والجداول إلزامية.">Alternative air source, buoyancy control device, depth gauge and/or computer and tables are mandatory.</li>
+                <li data-en="Make sure that your equipment is well maintained and working properly. Check it prior to every dive." data-ru="Убедитесь, что оборудование исправно." data-it="Assicurati che l'attrezzatura funzioni correttamente." data-es="Asegúrese de que el equipo funcione correctamente." data-de="Stellen Sie sicher, dass Ihre Ausrüstung richtig funktioniert." data-fr="Vérifiez votre équipement et assurez vous qu'il est régulièrement entretenu par un professionnel agréé." data-ar="تأكد من أن معداتك في حالة جيدة وتعمل بشكل صحيح. افحصها قبل كل غطسة.">Make sure that your equipment is well maintained and working properly. Check it prior to every dive.</li>
+                <li data-en="Only dive while being in good physical condition and never under the influence of medicine, alcohol or drugs." data-ru="Погружайтесь только в хорошем состоянии." data-it="Immergiti solo in buone condizioni fisiche." data-es="Bucee solo en buenas condiciones físicas." data-de="Tauchen Sie nur in guter körperlicher Verfassung." data-fr="Ne plongez que lorsque vous êtes en bonne condition physique, que vous n'êtes pas sous l'effet d'alcool ou de drogues." data-ar="اغطس فقط عندما تكون في حالة بدنية جيدة ولا تكون تحت تأثير الأدوية أو الكحول أو المخدرات.">Only dive while being in good physical condition and never under the influence of medicine, alcohol or drugs.</li>
+                <li data-en="Before diving, make sure you know all peculiarities of the dive-site, such as entry/exit conditions, type and direction of current, type of marine life, etc." data-ru="Перед погружением ознакомьтесь с особенностями места погружения." data-it="Prima di immergersi, assicurati di conoscere le particolarità del sito." data-es="Antes de bucear, asegúrese de conocer las particularidades del sitio." data-de="Vergewissern Sie sich vor dem Tauchen über die Besonderheiten des Tauchplatzes." data-fr="Avant de plonger assurez vous que vous connaissez tous les détails du site." data-ar="قبل الغوص، تأكد من معرفتك بجميع خصائص موقع الغوص.">Before diving, make sure you know all peculiarities of the dive-site.</li>
+                <li data-en="A repetitive dive may bear an increased risk of becoming a decompression dive. Plan repetitive dives so that each successive dive is at a shallower depth." data-ru="Повторное погружение может нести повышенный риск декомпрессии. Планируйте каждое последующее погружение на меньшей глубине." data-it="Un'immersione ripetitiva può comportare un aumento del rischio. Pianifica in modo che ogni immersione successiva sia a profondità minore." data-es="Una inmersión repetitiva puede conllevar un mayor riesgo. Planifique para que cada inmersión sucesiva sea a menor profundidad." data-de="Ein Wiederholungstauchgang kann ein erhöhtes Risiko bergen. Planen Sie Wiederholungstauchgänge flacher." data-fr="Les plongées successives accroissent la saturation, évitez d'approcher de la limite de décompression." data-ar="الغطس المتكرر قد يزيد من خطر غوص تخفيف الضغط. خطط للغطسات المتكررة بحيث تكون كل غطسة تالية على عمق أقل.">A repetitive dive may bear an increased risk of becoming a decompression dive. Plan repetitive dives so that each successive dive is at a shallower depth.</li>
+                <li data-en="After repetitive dive stop diving 24 hours prior to flying." data-ru="После повторных погружений прекратите погружения за 24 часа до полета." data-it="Dopo immersioni ripetitive smetti di immergerti 24 ore prima di volare." data-es="Después de inmersiones repetitivas deje de bucear 24 horas antes de volar." data-de="Nach Wiederholungstauchgängen 24 Stunden vor dem Flug nicht tauchen." data-fr="Planifiez vos plongées de façon à ce que chaque plongée suivante soit moins profonde que la précédente." data-ar="بعد الغطس المتكرر، توقف عن الغوص 24 ساعة قبل الطيران.">After repetitive dive stop diving 24 hours prior to flying.</li>
+            </ul>
+        </div>
+
+        <!-- Liability Acknowledgment -->
+        <div class="acknowledgment-section fade-in">
+            <p data-en="By signing this document I agree to exempt and release The Red Sea Diving Safari, my instructors, dive guides and all related entities from all liability or responsibility whatsoever for personal injury, property damage or wrongful death however caused, including, but not limited to the negligence of the released parties, whether passive or active. I have fully informed myself of the contents of this liability release and by reading it before I signed it on behalf of myself and my heirs." data-ru="Я соглашаюсь освободить Red Sea Diving Safari от любой ответственности за телесные повреждения или ущерб." data-it="Accetto di esonerare il Red Sea Diving Safari da qualsiasi responsabilità per lesioni personali o danni." data-es="Acepto eximir a Red Sea Diving Safari de toda responsabilidad por lesiones personales o daños." data-de="Ich stimme zu, die Red Sea Diving Safari von jeglicher Haftung für Verletzungen oder Schäden zu befreien." data-fr="Je veux par ce moyen dégager et décharger le Red Sea Diving Safari, mon instructeur, et guide de plongée et les parties déchargées d'absolument toute responsabilité en cas de dommages en relation avec les activités subaquatiques et les excursions. Je me suis bien informé du contenu de cette décharge de responsabilité." data-ar="بالموافقة على هذا المستند، أوافق على إعفاء وإخلاء Red Sea Diving Safari ومدربيّ ومرشدي الغوص وجميع الكيانات ذات الصلة من جميع المسؤوليات عن أي إصابة شخصية أو تلف في الممتلكات أو وفاة غير مشروعة. لقد اطلعت بالكامل على محتويات إخلاء المسؤولية هذا.">By signing this document I agree to exempt and release The Red Sea Diving Safari, my instructors, dive guides and all related entities from all liability or responsibility whatsoever for personal injury, property damage or wrongful death however caused. I have fully informed myself of the contents of this liability release.</p>
+            <button class="ack-btn" onclick="acknowledge(this)" data-en="✓ I Agree & Acknowledge" data-ru="✓ Я согласен" data-it="✓ Sono d'accordo" data-es="✓ Estoy de acuerdo" data-de="✓ Ich stimme zu" data-fr="✓ J'accepte et je confirme" data-ar="✓ أوافق وأقر">✓ I Agree & Acknowledge</button>
+        </div>
+
+        <div class="result-section" id="result-section">
+            <div class="result-icon">✅</div>
+            <h3 data-en="Liability Release Acknowledged" data-ru="Освобождение от ответственности подтверждено" data-it="Esonero da responsabilità confermato" data-es="Exención de responsabilidad confirmada" data-de="Haftungsausschluss bestätigt" data-fr="Décharge de responsabilité confirmée" data-ar="تم الإقرار بإخلاء المسؤولية">Liability Release Acknowledged</h3>
+            <p data-en="Thank you. Please proceed to the next form." data-ru="Спасибо. Перейдите к следующей форме." data-it="Grazie. Procedi al modulo successivo." data-es="Gracias. Pase al siguiente formulario." data-de="Danke. Bitte fahren Sie mit dem nächsten Formular fort." data-fr="Merci. Veuillez passer au formulaire suivant." data-ar="شكراً لك. يرجى المتابعة إلى النموذج التالي.">Thank you. Please proceed to the next form.</p>
+        </div>
+    </div>
+
+    <footer class="footer"><p>Red Sea Diving Safari — <a href="https://www.redsea-divingsafari.com" target="_blank">www.redsea-divingsafari.com</a></p></footer>
+    <script src="lang.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diver Medical Questionnaire - Red Sea Diving Safari</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+        <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html" class="navbar-brand">
+                <div class="logo-icon">🤿</div>
+                <div>
+                    <div class="brand-text">Red Sea Diving Safari</div>
+                    <div class="brand-sub">Marsa Shagra • Marsa Nakari • Wadi Lahami</div>
+                </div>
+            </a>
+            <div class="navbar-actions">
+                <a href="index.html" class="nav-home" data-en="← Home" data-ru="← Домой" data-it="← Home" data-es="← Inicio" data-de="← Startseite" data-fr="← Accueil" data-ar="الرئيسية →">← Home</a>
+                <div class="lang-selector-custom">
+                    <div class="lang-current" onclick="toggleLangDropdown()">
+                        <span class="lang-flag">🇬🇧</span> <span class="lang-code">EN</span> <span class="lang-arrow">▼</span>
+                    </div>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <div class="lang-option" onclick="setLang('en')">🇬🇧 English</div>
+                        <div class="lang-option" onclick="setLang('fr')">🇫🇷 Français</div>
+                        <div class="lang-option" onclick="setLang('ar')">🇸🇦 عربي</div>
+                        <div class="lang-option" onclick="setLang('ru')">🇷🇺 Русский</div>
+                        <div class="lang-option" onclick="setLang('it')">🇮🇹 Italiano</div>
+                        <div class="lang-option" onclick="setLang('es')">🇪🇸 Español</div>
+                        <div class="lang-option" onclick="setLang('de')">🇩🇪 Deutsch</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+
+    <div class="page-container">
+        <div class="page-header fade-in">
+            <span class="page-icon">🏥</span>
+            <h1 data-en="Diver Medical | Participant Questionnaire" data-ru="Медицинская анкета участника" data-it="Questionario medico del partecipante" data-es="Cuestionario médico del partecipante" data-de="Medizinischer Teilnehmerfragebogen" data-fr="Examen Médical du Plongeur | Questionnaire" data-ar="الاستبيان الطبي للغواص | استبيان المشارك">Diver Medical | Participant Questionnaire</h1>
+            <p class="subtitle" data-en="Page 1 of 3 — Version: 2022-02-01" data-ru="Стр. 1 из 3" data-it="Pagina 1 di 3" data-es="Página 1 de 3" data-de="Seite 1 von 3" data-fr="Page 1 sur 3 — Version : 2022-02-01" data-ar="الصفحة 1 من 3 — الإصدار: 2022-02-01">Page 1 of 3 — Version: 2022-02-01</p>
+        </div>
+
+        <div class="instructions-card fade-in">
+            <h3>📌 <span data-en="Directions" data-ru="Инструкции" data-it="Istruzioni" data-es="Instrucciones" data-de="Anweisungen" data-fr="Instructions" data-ar="التعليمات">Directions</span></h3>
+            <p data-en="Complete this questionnaire as a prerequisite to a recreational scuba diving or freediving course. Recreational scuba diving and freediving requires good physical and mental health. There are medical conditions which can be hazardous while diving. If you have any concerns about your diving fitness, consult your physician before diving." data-ru="Заполните эту анкету перед курсом дайвинга. Погружения требуют хорошего здоровья." data-it="Completa questo questionario prima del corso. L'immersione richiede buona salute." data-es="Complete este cuestionario antes del curso. El buceo requiere buena salud." data-de="Füllen Sie diesen Fragebogen vor dem Kurs aus. Tauchen erfordert gute Gesundheit." data-fr="Remplissez ce questionnaire préalablement à un cours de plongée sous-marine ou d'apnée. La plongée sous-marine et l'apnée récréative nécessitent une bonne santé physique et mentale. Certaines conditions médicales peuvent être dangereuses pendant la plongée. Si vous avez des inquiétudes, consultez votre médecin." data-ar="أكمل هذا الاستبيان كشرط مسبق لدورة الغوص الترفيهي أو الغوص الحر. يتطلب الغوص الترفيهي والغوص الحر صحة بدنية وعقلية جيدة. هناك حالات طبية قد تكون خطرة أثناء الغوص. إذا كانت لديك أي مخاوف، استشر طبيبك.">Complete this questionnaire as a prerequisite to a recreational scuba diving or freediving course. Recreational scuba diving and freediving requires good physical and mental health. There are medical conditions which can be hazardous while diving. If you have any concerns about your diving fitness, consult your physician before diving.</p>
+            <div class="note" data-en="⚠️ Note to women: If you are pregnant, or attempting to become pregnant, do not dive." data-ru="⚠️ Женщинам: не нырять при беременности." data-it="⚠️ Donne: non immergersi se incinte." data-es="⚠️ Mujeres: no bucear si está embarazada." data-de="⚠️ Frauen: Nicht schwanger tauchen." data-fr="⚠️ Note aux femmes : Si vous êtes enceinte ou tentez de devenir enceinte, ne plongez pas." data-ar="⚠️ ملاحظة للنساء: إذا كنتِ حاملاً أو تحاولين الحمل، لا تغوصي.">⚠️ Note to women: If you are pregnant, or attempting to become pregnant, do not dive.</div>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="question-card fade-in" data-condition="case-a-notice">
+            <div class="question-number">1</div>
+            <div class="question-text" data-en="I have had problems with my lungs, breathing, heart and/or blood affecting my normal physical or mental performance." data-ru="У меня были проблемы с легкими, сердцем или кровью." data-it="Ho avuto problemi ai polmoni, al cuore o al sangue." data-es="He tenido problemas en los pulmones, el corazón o la sangre." data-de="Ich hatte Probleme mit Lunge, Herz oder Blut." data-fr="J'ai eu des problèmes pulmonaires, respiratoires, cardiaques et/ou sanguins affectant mes performances physiques ou mentales normales." data-ar="لدي مشاكل في الرئتين أو التنفس أو القلب و/أو الدم تؤثر على أدائي البدني أو العقلي الطبيعي.">I have had problems with my lungs, breathing, heart and/or blood affecting my normal physical or mental performance.</div>
+            <div class="question-redirect" data-en="↪ If Yes → Go to Case A" data-ru="↪ Если Да → Случай А" data-it="↪ Se Sì → Caso A" data-es="↪ Si Sí → Caso A" data-de="↪ Wenn Ja → Fall A" data-fr="↪ Si Oui → Allez à la Case A" data-ar="↪ إذا نعم ← اذهب إلى الحالة أ">↪ If Yes → Go to Case A</div>
+            <div class="choices-row">
+                <button class="choice-btn" data-choice="yes"><span class="check-icon"></span><span data-en="Yes" data-ru="Да" data-it="Sì" data-es="Sí" data-de="Ja" data-fr="Oui" data-ar="نعم">Yes</span></button>
+                <button class="choice-btn" data-choice="no"><span class="check-icon"></span><span data-en="No" data-ru="Нет" data-it="No" data-es="No" data-de="Nein" data-fr="Non" data-ar="لا">No</span></button>
+            </div>
+            <div class="conditional-section" id="case-a-notice">
+                <div class="conditional-notice">⚠️ <span data-en="You must complete Case A on the Medical Examination page" data-ru="Заполните Случай А" data-it="Completa il Caso A" data-es="Complete el Caso A" data-de="Fall A ausfüllen" data-fr="Vous devez remplir la Case A sur la page d'examen médical" data-ar="يجب إكمال الحالة أ في صفحة الفحص الطبي">You must complete Case A on the Medical Examination page</span></div>
+            </div>
+        </div>
+
+        <!-- Question 2 - KEY CONDITIONAL -->
+        <div class="question-card fade-in" data-condition="case-b-notice">
+            <div class="question-number">2</div>
+            <div class="question-text" data-en="I am over 45 years of age." data-ru="Мне больше 45 лет." data-it="Ho più di 45 anni." data-es="Tengo más de 45 años." data-de="Ich bin über 45 Jahre alt." data-fr="Je suis âgé de plus de 45 ans." data-ar="عمري أكثر من 45 سنة.">I am over 45 years of age.</div>
+            <div class="question-redirect" data-en="↪ If Yes → Go to Case B" data-ru="↪ Если Да → Случай Б" data-it="↪ Se Sì → Caso B" data-es="↪ Si Sí → Caso B" data-de="↪ Wenn Ja → Fall B" data-fr="↪ Si Oui → Allez à la Case B" data-ar="↪ إذا نعم ← اذهب إلى الحالة ب">↪ If Yes → Go to Case B</div>
+            <div class="choices-row">
+                <button class="choice-btn" data-choice="yes"><span class="check-icon"></span><span data-en="Yes" data-ru="Да" data-it="Sì" data-es="Sí" data-de="Ja" data-fr="Oui" data-ar="نعم">Yes</span></button>
+                <button class="choice-btn" data-choice="no"><span class="check-icon"></span><span data-en="No" data-ru="Нет" data-it="No" data-es="No" data-de="Nein" data-fr="Non" data-ar="لا">No</span></button>
+            </div>
+            <div class="conditional-section" id="case-b-notice">
+                <div class="conditional-notice">⚠️ <span data-en="You must complete Case B on the Medical Examination page" data-ru="Заполните Случай Б" data-it="Completa il Caso B" data-es="Complete el Caso B" data-de="Fall B ausfüllen" data-fr="Vous devez remplir la Case B sur la page d'examen médical" data-ar="يجب إكمال الحالة ب في صفحة الفحص الطبي">You must complete Case B on the Medical Examination page</span></div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-card fade-in" data-condition="case-c-notice">
+            <div class="question-number">3</div>
+            <div class="question-text" data-en="I struggle to perform moderate exercise (for example, walk 1.6 km/one mile in 14 minutes or swim 200 meters/yards without resting), OR I have been unable to participate in a normal physical activity due to fitness or health reasons within the past 12 months." data-ru="Мне трудно выполнять умеренные упражнения." data-it="Faccio fatica a svolgere un esercizio moderato." data-es="Me cuesta realizar ejercicio moderado." data-de="Ich habe Schwierigkeiten, moderate Übungen durchzuführen." data-fr="J'ai du mal à faire des efforts physiques modérés (par exemple, marcher 1,6 km en 14 minutes ou nager 200 mètres sans me reposer), ou je n'ai pas pu participer à une activité physique normale pour des raisons de forme physique ou de santé depuis 12 mois." data-ar="أجد صعوبة في أداء تمارين معتدلة (مثلاً، المشي 1.6 كم في 14 دقيقة أو السباحة 200 متر بدون راحة)، أو لم أتمكن من المشاركة في نشاط بدني عادي لأسباب صحية خلال الـ 12 شهراً الماضية.">I struggle to perform moderate exercise (for example, walk 1.6 km/one mile in 14 minutes or swim 200 meters/yards without resting), OR I have been unable to participate in a normal physical activity due to fitness or health reasons within the past 12 months.</div>
+            <div class="choices-row">
+                <button class="choice-btn" data-choice="yes"><span class="check-icon"></span><span data-en="Yes" data-ru="Да" data-it="Sì" data-es="Sí" data-de="Ja" data-fr="Oui" data-ar="نعم">Yes</span></button>
+                <button class="choice-btn" data-choice="no"><span class="check-icon"></span><span data-en="No" data-ru="Нет" data-it="No" data-es="No" data-de="Nein" data-fr="Non" data-ar="لا">No</span></button>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-card fade-in" data-condition="case-c-notice-4">
+            <div class="question-number">4</div>
+            <div class="question-text" data-en="I have had problems with my eyes, ears, or nasal passages/sinuses." data-ru="У меня были проблемы с глазами, ушами или носовыми пазухами." data-it="Ho avuto problemi agli occhi, orecchie o seni nasali." data-es="He tenido problemas con mis ojos, oídos o senos nasales." data-de="Ich hatte Probleme mit Augen, Ohren oder Nasennebenhöhlen." data-fr="J'ai eu des problèmes aux yeux, aux oreilles, aux conduites nasales ou sinus." data-ar="لدي مشاكل في العينين أو الأذنين أو الممرات الأنفية/الجيوب الأنفية.">I have had problems with my eyes, ears, or nasal passages/sinuses.</div>
+            <div class="question-redirect" data-en="↪ If Yes → Go to Case C" data-ru="↪ Если Да → Случай В" data-it="↪ Se Sì → Caso C" data-es="↪ Si Sí → Caso C" data-de="↪ Wenn Ja → Fall C" data-fr="↪ Si Oui → Allez à la Case C" data-ar="↪ إذا نعم ← اذهب إلى الحالة ج">↪ If Yes → Go to Case C</div>
+            <div class="choices-row">
+                <button class="choice-btn" data-choice="yes"><span class="check-icon"></span><span data-en="Yes" data-ru="Да" data-it="Sì" data-es="Sí" data-de="Ja" data-fr="Oui" data-ar="نعم">Yes</span></button>
+                <button class="choice-btn" data-choice="no"><span class="check-icon"></span><span data-en="No" data-ru="Нет" data-it="No" data-es="No" data-de="Nein" data-fr="Non" data-ar="لا">No</span></button>
+            </div>
+            <div class="conditional-section" id="case-c-notice-4">
+                <div class="conditional-notice">⚠️ <span data-en="You must complete Case C on the Medical Examination page" data-ru="Заполните Случай В" data-it="Completa il Caso C" data-es="Complete el Caso C" data-de="Fall C ausfüllen" data-fr="Vous devez remplir la Case C" data-ar="يجب إكمال الحالة ج في صفحة الفحص الطبي">You must complete Case C on the Medical Examination page</span></div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question-card fade-in">
+            <div class="question-number">5</div>
+            <div class="question-text" data-en="I have had surgery within the last 12 months, OR I have ongoing problems related to past surgery." data-ru="У меня была операция за последние 12 месяцев." data-it="Ho subito un intervento chirurgico negli ultimi 12 mesi." data-es="Me operaron en los últimos 12 meses." data-de="Ich wurde in den letzten 12 Monaten operiert." data-fr="J'ai subi une intervention chirurgicale au cours des 12 derniers mois, ou j'ai des problèmes chroniques liés à une intervention chirurgicale antérieure." data-ar="أجريت لي عملية جراحية خلال الـ 12 شهراً الماضية، أو لدي مشاكل مستمرة تتعلق بعملية جراحية سابقة.">I have had surgery within the last 12 months, OR I have ongoing problems related to past surgery.</div>
+            <div class="choices-row">
+                <button class="choice-btn" data-choice="yes"><span class="check-icon"></span><span data-en="Yes" data-ru="Да" data-it="Sì" data-es="Sí" data-de="Ja" data-fr="Oui" data-ar="نعم">Yes</span></button>
+                <button class="choice-btn" data-choice="no"><span class="check-icon"></span><span data-en="No" data-ru="Нет" data-it="No" data-es="No" data-de="Nein" data-fr="Non" data-ar="لا">No</span></button>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question-card fade-in" data-condition="case-d-notice">
+            <div class="question-number">6</div>
+            <div class="question-text" data-en="I have lost consciousness, had migraine headaches, seizures, stroke, significant head injury, or suffer from persistent neurologic injury or disease." data-ru="Я терял сознание, страдал мигренью, судорогами." data-it="Ho perso conoscenza, ho avuto emicranie, convulsioni." data-es="He perdido el conocimiento, tuve migrañas, convulsiones." data-de="Ich habe das Bewusstsein verloren, hatte Migräne, Krampfanfälle." data-fr="J'ai des pertes de connaissance, j'ai (ou) des migraines, des convulsions, un accident vasculaire cérébral, un traumatisme crânien important ou je souffre de lésions ou maladies neurologiques persistantes." data-ar="فقدت الوعي، أو عانيت من صداع نصفي، أو نوبات، أو سكتة دماغية، أو إصابة كبيرة في الرأس، أو أعاني من إصابة أو مرض عصبي مستمر.">I have lost consciousness, had migraine headaches, seizures, stroke, significant head injury, or suffer from persistent neurologic injury or disease.</div>
+            <div class="question-redirect" data-en="↪ If Yes → Go to Case D" data-ru="↪ Если Да → Случай Г" data-it="↪ Se Sì → Caso D" data-es="↪ Si Sí → Caso D" data-de="↪ Wenn Ja → Fall D" data-fr="↪ Si Oui → Allez à la Case D" data-ar="↪ إذا نعم ← اذهب إلى الحالة د">↪ If Yes → Go to Case D</div>
+            <div class="choices-row">
+                <button class="choice-btn" data-choice="yes"><span class="check-icon"></span><span data-en="Yes" data-ru="Да" data-it="Sì" data-es="Sí" data-de="Ja" data-fr="Oui" data-ar="نعم">Yes</span></button>
+                <button class="choice-btn" data-choice="no"><span class="check-icon"></span><span data-en="No" data-ru="Нет" data-it="No" data-es="No" data-de="Nein" data-fr="Non" data-ar="لا">No</span></button>
+            </div>
+            <div class="conditional-section" id="case-d-notice">
+                <div class="conditional-notice">⚠️ <span data-en="You must complete Case D on the Medical Examination page" data-ru="Заполните Случай Г" data-it="Completa il Caso D" data-es="Complete el Caso D" data-de="Fall D ausfüllen" data-fr="Vous devez remplir la Case D" data-ar="يجب إكمال الحالة د">You must complete Case D on the Medical Examination page</span></div>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question-card fade-in" data-condition="case-e-notice">
+            <div class="question-number">7</div>
+            <div class="question-text" data-en="I am currently undergoing treatment (or have required treatment within the last five years) for psychological problems, personality disorder, panic attacks, or an addiction to drugs or alcohol; or, I have been diagnosed with a learning or developmental disability." data-ru="В настоящее время я прохожу лечение от психологических проблем." data-it="Attualmente in trattamento per problemi psicologici." data-es="Actualmente en tratamiento por problemas psicológicos." data-de="Zurzeit in Behandlung wegen psychischer Probleme." data-fr="Je suis actuellement en traitement (ou j'ai eu besoin d'un traitement au cours des cinq dernières années) pour des problèmes psychologiques, des troubles de la personnalité, des crises de panique ou une dépendance à la drogue ou à l'alcool; ou, on m'a diagnostiqué un trouble d'apprentissage ou du développement." data-ar="أخضع حالياً للعلاج (أو احتجت للعلاج خلال السنوات الخمس الماضية) لمشاكل نفسية، أو اضطراب في الشخصية، أو نوبات هلع، أو إدمان على المخدرات أو الكحول؛ أو تم تشخيصي باضطراب في التعلم أو النمو.">I am currently undergoing treatment (or have required treatment within the last five years) for psychological problems, personality disorder, panic attacks, or an addiction to drugs or alcohol; or, I have been diagnosed with a learning or developmental disability.</div>
+            <div class="question-redirect" data-en="↪ If Yes → Go to Case E" data-ru="↪ Если Да → Случай Д" data-it="↪ Se Sì → Caso E" data-es="↪ Si Sí → Caso E" data-de="↪ Wenn Ja → Fall E" data-fr="↪ Si Oui → Allez à la Case E" data-ar="↪ إذا نعم ← اذهب إلى الحالة هـ">↪ If Yes → Go to Case E</div>
+            <div class="choices-row">
+                <button class="choice-btn" data-choice="yes"><span class="check-icon"></span><span data-en="Yes" data-ru="Да" data-it="Sì" data-es="Sí" data-de="Ja" data-fr="Oui" data-ar="نعم">Yes</span></button>
+                <button class="choice-btn" data-choice="no"><span class="check-icon"></span><span data-en="No" data-ru="Нет" data-it="No" data-es="No" data-de="Nein" data-fr="Non" data-ar="لا">No</span></button>
+            </div>
+            <div class="conditional-section" id="case-e-notice">
+                <div class="conditional-notice">⚠️ <span data-en="You must complete Case E on the Medical Examination page" data-ru="Заполните Случай Д" data-it="Completa il Caso E" data-es="Complete el Caso E" data-de="Fall E ausfüllen" data-fr="Vous devez remplir la Case E" data-ar="يجب إكمال الحالة هـ">You must complete Case E on the Medical Examination page</span></div>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question-card fade-in" data-condition="case-f-notice">
+            <div class="question-number">8</div>
+            <div class="question-text" data-en="I have had back problems, hernia, ulcers, or diabetes." data-ru="У меня были проблемы со спиной, грыжа, язва или диабет." data-it="Ho avuto problemi alla schiena, ernia, ulcere o diabete." data-es="He tenido problemas de espalda, hernia, úlceras o diabetes." data-de="Ich hatte Rückenprobleme, Leistenbruch, Geschwüre oder Diabetes." data-fr="J'ai eu des problèmes de dos, une hernie, des ulcères ou du diabète." data-ar="لدي مشاكل في الظهر، أو فتق، أو قرحة، أو مرض السكري.">I have had back problems, hernia, ulcers, or diabetes.</div>
+            <div class="question-redirect" data-en="↪ If Yes → Go to Case F" data-ru="↪ Если Да → Случай Е" data-it="↪ Se Sì → Caso F" data-es="↪ Si Sí → Caso F" data-de="↪ Wenn Ja → Fall F" data-fr="↪ Si Oui → Allez à la Case F" data-ar="↪ إذا نعم ← اذهب إلى الحالة و">↪ If Yes → Go to Case F</div>
+            <div class="choices-row">
+                <button class="choice-btn" data-choice="yes"><span class="check-icon"></span><span data-en="Yes" data-ru="Да" data-it="Sì" data-es="Sí" data-de="Ja" data-fr="Oui" data-ar="نعم">Yes</span></button>
+                <button class="choice-btn" data-choice="no"><span class="check-icon"></span><span data-en="No" data-ru="Нет" data-it="No" data-es="No" data-de="Nein" data-fr="Non" data-ar="لا">No</span></button>
+            </div>
+            <div class="conditional-section" id="case-f-notice">
+                <div class="conditional-notice">⚠️ <span data-en="You must complete Case F on the Medical Examination page" data-ru="Заполните Случай Е" data-it="Completa il Caso F" data-es="Complete el Caso F" data-de="Fall F ausfüllen" data-fr="Vous devez remplir la Case F" data-ar="يجب إكمال الحالة و">You must complete Case F on the Medical Examination page</span></div>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question-card fade-in" data-condition="case-g-notice">
+            <div class="question-number">9</div>
+            <div class="question-text" data-en="I have had stomach or intestine problems, including recent diarrhea." data-ru="У меня были проблемы с желудком или кишечником." data-it="Ho avuto problemi allo stomaco o all'intestino." data-es="He tenido problemas de estómago o intestino." data-de="Ich hatte Magen- oder Darmprobleme." data-fr="J'ai eu des problèmes d'estomac ou d'intestin, y compris une diarrhée récente." data-ar="لدي مشاكل في المعدة أو الأمعاء، بما في ذلك إسهال حديث.">I have had stomach or intestine problems, including recent diarrhea.</div>
+            <div class="question-redirect" data-en="↪ If Yes → Go to Case G" data-ru="↪ Если Да → Случай Ж" data-it="↪ Se Sì → Caso G" data-es="↪ Si Sí → Caso G" data-de="↪ Wenn Ja → Fall G" data-fr="↪ Si Oui → Allez à la Case G" data-ar="↪ إذا نعم ← اذهب إلى الحالة ز">↪ If Yes → Go to Case G</div>
+            <div class="choices-row">
+                <button class="choice-btn" data-choice="yes"><span class="check-icon"></span><span data-en="Yes" data-ru="Да" data-it="Sì" data-es="Sí" data-de="Ja" data-fr="Oui" data-ar="نعم">Yes</span></button>
+                <button class="choice-btn" data-choice="no"><span class="check-icon"></span><span data-en="No" data-ru="Нет" data-it="No" data-es="No" data-de="Nein" data-fr="Non" data-ar="لا">No</span></button>
+            </div>
+            <div class="conditional-section" id="case-g-notice">
+                <div class="conditional-notice">⚠️ <span data-en="You must complete Case G on the Medical Examination page" data-ru="Заполните Случай Ж" data-it="Completa il Caso G" data-es="Complete el Caso G" data-de="Fall G ausfüllen" data-fr="Vous devez remplir la Case G" data-ar="يجب إكمال الحالة ز">You must complete Case G on the Medical Examination page</span></div>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question-card fade-in">
+            <div class="question-number">10</div>
+            <div class="question-text" data-en="I am taking prescription medications (with the exception of birth control or anti-malarial drugs other than mefloquine/Lariam)." data-ru="Я принимаю рецептурные препараты." data-it="Prendo farmaci su prescrizione." data-es="Estoy tomando medicamentos recetados." data-de="Ich nehme verschreibungspflichtige Medikamente." data-fr="Je prends des médicaments sur ordonnance médicale (à l'exception des contraceptifs ou des antipaludéens autres que la méfloquine/Lariam)." data-ar="أتناول أدوية بوصفة طبية (باستثناء موانع الحمل أو الأدوية المضادة للملاريا غير الميفلوكين/لاريام).">I am taking prescription medications (with the exception of birth control or anti-malarial drugs other than mefloquine/Lariam).</div>
+            <div class="choices-row">
+                <button class="choice-btn" data-choice="yes"><span class="check-icon"></span><span data-en="Yes" data-ru="Да" data-it="Sì" data-es="Sí" data-de="Ja" data-fr="Oui" data-ar="نعم">Yes</span></button>
+                <button class="choice-btn" data-choice="no"><span class="check-icon"></span><span data-en="No" data-ru="Нет" data-it="No" data-es="No" data-de="Nein" data-fr="Non" data-ar="لا">No</span></button>
+            </div>
+        </div>
+
+        <!-- Result Section -->
+        <div class="result-section" id="result-section">
+            <div class="result-icon">✅</div>
+            <h3 data-en="Questionnaire Note" data-ru="Примечание к анкете" data-it="Nota al questionario" data-es="Nota del cuestionario" data-de="Hinweis zum Fragebogen" data-fr="Note du Questionnaire" data-ar="ملاحظة الاستبيان">Questionnaire Note</h3>
+            <p data-en="If you answered NO to all 10 questions, a medical evaluation is not required. If you answered YES to questions 3, 5 or 10, or to any question, please consult with your physician and complete the Medical Examination page." data-ru="Если вы ответили НЕТ на все вопросы, медосмотр не требуется." data-it="Se hai risposto NO a tutte le domande, non è necessaria valutazione medica." data-es="Si respondió NO a todas las preguntas, no se requiere evaluación médica." data-de="Wenn Sie alle Fragen mit NEIN beantwortet haben, ist keine ärztliche Untersuchung erforderlich." data-fr="Si vous avez répondu NON à toutes les 10 questions, une évaluation médicale n'est pas requise. Si vous avez répondu OUI aux questions 3, 5, 10 ou à toute question, consultez votre médecin." data-ar="إذا أجبت بـ لا على جميع الأسئلة العشرة، فلا يلزم إجراء تقييم طبي. إذا أجبت بـ نعم على الأسئلة 3 أو 5 أو 10 أو أي سؤال، يرجى استشارة طبيبك.">If you answered NO to all 10 questions, a medical evaluation is not required. If you answered YES to questions 3, 5 or 10, or to any question, please consult with your physician and complete the Medical Examination page.</p>
+        </div>
+
+        <div class="acknowledgment-section fade-in">
+            <p data-en="I have answered all questions honestly, and understand that I accept responsibility for any consequences resulting from any questions I may have answered inaccurately or for my failure to disclose any existing or past health conditions." data-ru="Я ответил честно и несу ответственность за последствия." data-it="Ho risposto onestamente e accetto la responsabilità." data-es="He respondido honestamente y acepto la responsabilidad." data-de="Ich habe ehrlich geantwortet und übernehme die Verantwortung." data-fr="J'ai répondu honnêtement à toutes les questions et je comprends que j'accepte la responsabilité des conséquences résultant de toute question à laquelle j'ai répondu de manière inexacte." data-ar="لقد أجبت على جميع الأسئلة بصدق، وأفهم أنني أتحمل المسؤولية عن أي عواقب ناتجة عن أي أسئلة قد أكون أجبت عليها بشكل غير دقيق.">I have answered all questions honestly, and understand that I accept responsibility for any consequences resulting from any questions I may have answered inaccurately or for my failure to disclose any existing or past health conditions.</p>
+            <button class="ack-btn" onclick="acknowledge(this)" data-en="✓ I Acknowledge" data-ru="✓ Я подтверждаю" data-it="✓ Confermo" data-es="✓ Confirmo" data-de="✓ Ich bestätige" data-fr="✓ Je Confirme" data-ar="✓ أقر بذلك">✓ I Acknowledge</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Red Sea Diving Safari — <a href="https://www.redsea-divingsafari.com" target="_blank">www.redsea-divingsafari.com</a></p>
+    </footer>
+
+    <script src="lang.js"></script>
+    <script>
+        // Show result when all questions answered
+        document.addEventListener('click', () => {
+            setTimeout(() => {
+                const allCards = document.querySelectorAll('.question-card');
+                let allAnswered = true;
+                allCards.forEach(card => {
+                    const hasAnswer = card.querySelector('.selected-yes, .selected-no');
+                    if (!hasAnswer) allAnswered = false;
+                });
+                if (allAnswered) {
+                    document.getElementById('result-section').classList.add('visible');
+                }
+            }, 100);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Sea Diving Safari - Forms</title>
+    <meta name="description" content="Red Sea Diving Safari registration forms - Medical questionnaire, liability release, and cancellation policy">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+        <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html" class="navbar-brand">
+                <div class="logo-icon">🤿</div>
+                <div>
+                    <div class="brand-text">Red Sea Diving Safari</div>
+                    <div class="brand-sub">Marsa Shagra • Marsa Nakari • Wadi Lahami</div>
+                </div>
+            </a>
+            <div class="navbar-actions">
+                <div class="lang-selector-custom">
+                    <div class="lang-current" onclick="toggleLangDropdown()">
+                        <span class="lang-flag">🇬🇧</span> <span class="lang-code">EN</span> <span class="lang-arrow">▼</span>
+                    </div>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <div class="lang-option" onclick="setLang('en')">🇬🇧 English</div>
+                        <div class="lang-option" onclick="setLang('fr')">🇫🇷 Français</div>
+                        <div class="lang-option" onclick="setLang('ar')">🇸🇦 عربي</div>
+                        <div class="lang-option" onclick="setLang('ru')">🇷🇺 Русский</div>
+                        <div class="lang-option" onclick="setLang('it')">🇮🇹 Italiano</div>
+                        <div class="lang-option" onclick="setLang('es')">🇪🇸 Español</div>
+                        <div class="lang-option" onclick="setLang('de')">🇩🇪 Deutsch</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-container">
+        <div class="page-header fade-in">
+            <span class="page-icon">🌊</span>
+            <h1 data-en="Diving Center Forms" data-ru="Формы дайвинг-центра" data-it="Moduli del Centro Immersioni" data-es="Formularios del Centro de Buceo" data-de="Tauchcenter-Formulare" data-fr="Formulaires du Centre de Plongée" data-ar="نماذج مركز الغوص">Diving Center Forms</h1>
+            <p class="subtitle" data-en="Please complete all required forms before your diving experience" data-ru="Пожалуйста, заполните все формы перед погружением" data-it="Si prega di completare tutti i moduli prima dell'immersione" data-es="Complete todos los formularios antes de bucear" data-de="Bitte füllen Sie alle Formulare vor dem Tauchen aus" data-fr="Veuillez remplir tous les formulaires requis avant votre expérience de plongée" data-ar="يرجى إكمال جميع النماذج المطلوبة قبل تجربة الغوص">Please complete all required forms before your diving experience</p>
+        </div>
+
+        <div class="forms-grid">
+            <a href="medical-questionnaire.html" class="form-card fade-in" id="card-medical">
+                <span class="card-icon">🏥</span>
+                <h3 data-en="Diver Medical Questionnaire" data-ru="Медицинская анкета дайвера" data-it="Questionario medico del subacqueo" data-es="Cuestionario médico del buceador" data-de="Medizinischer Fragebogen für Taucher" data-fr="Questionnaire Médical du Plongeur" data-ar="استبيان طبي للغواص">Diver Medical Questionnaire</h3>
+                <p data-en="10 health screening questions — required for all divers" data-ru="10 вопросов проверки здоровья — обязательно для всех дайверов" data-it="10 domande di screening sanitario — obbligatorio per tutti i subacquei" data-es="10 preguntas de evaluación de salud — obligatorio para todos los buceadores" data-de="10 Fragen zur Gesundheitsprüfung — für alle Taucher erforderlich" data-fr="10 questions de dépistage de santé — requis pour tous les plongeurs" data-ar="10 أسئلة فحص صحي — مطلوب لجميع الغواصين">10 health screening questions — required for all divers</p>
+                <span class="card-arrow" data-en="Start →" data-ru="Начать →" data-it="Inizia →" data-es="Empezar →" data-de="Start →" data-fr="Commencer →" data-ar="← ابدأ">Start →</span>
+            </a>
+
+            <a href="medical-examination.html" class="form-card fade-in" id="card-exam">
+                <span class="card-icon">📋</span>
+                <h3 data-en="Medical Examination Details" data-ru="Детали медосмотра" data-it="Dettagli esame medico" data-es="Detalles del examen médico" data-de="Details zur ärztlichen Untersuchung" data-fr="Détails de l'Examen Médical" data-ar="تفاصيل الفحص الطبي">Medical Examination Details</h3>
+                <p data-en="Detailed follow-up Cases A–G based on your questionnaire answers" data-ru="Подробные последующие случаи А-Ж на основе ваших ответов" data-it="Casi dettagliati A-G in base alle tue risposte" data-es="Casos detallados A-G según sus respuestas" data-de="Detaillierte Folge-Fälle A-G basierend auf Ihren Antworten" data-fr="Cas de suivi détaillés A–G basés sur vos réponses" data-ar="حالات المتابعة التفصيلية أ–ز بناءً على إجاباتك">Detailed follow-up Cases A–G based on your questionnaire answers</p>
+                <span class="card-arrow" data-en="Start →" data-ru="Начать →" data-it="Inizia →" data-es="Empezar →" data-de="Start →" data-fr="Commencer →" data-ar="← ابدأ">Start →</span>
+            </a>
+
+            <a href="liability-release.html" class="form-card fade-in" id="card-liability">
+                <span class="card-icon">📜</span>
+                <h3 data-en="Liability Release & Risk Assumption" data-ru="Освобождение от ответственности" data-it="Esonero da Responsabilità" data-es="Exención de Responsabilidad" data-de="Haftungsausschluss" data-fr="Décharge de Responsabilité" data-ar="إخلاء المسؤولية وتحمل المخاطر">Liability Release & Risk Assumption</h3>
+                <p data-en="Safety rules, liability waiver, and diving information" data-ru="Правила безопасности, отказ от ответственности" data-it="Regole di sicurezza, esonero di responsabilità" data-es="Reglas de seguridad, exención de responsabilidad" data-de="Sicherheitsregeln, Haftungsausschluss" data-fr="Règles de sécurité, décharge de responsabilité et informations de plongée" data-ar="قواعد السلامة وإخلاء المسؤولية ومعلومات الغوص">Safety rules, liability waiver, and diving information</p>
+                <span class="card-arrow" data-en="Start →" data-ru="Начать →" data-it="Inizia →" data-es="Empezar →" data-de="Start →" data-fr="Commencer →" data-ar="← ابدأ">Start →</span>
+            </a>
+
+            <a href="cancellation-policy.html" class="form-card fade-in" id="card-cancel">
+                <span class="card-icon">⏰</span>
+                <h3 data-en="Cancellation & No-Show Policy" data-ru="Политика отмены и неявки" data-it="Politica di Cancellazione e No-Show" data-es="Política de Cancelación y No Presentación" data-de="Stornierungs- & No-Show-Richtlinie" data-fr="Politique d'Annulation" data-ar="سياسة الإلغاء وعدم الحضور">Cancellation & No-Show Policy</h3>
+                <p data-en="Excursion cancellation terms and acknowledgment" data-ru="Условия отмены экскурсий и подтверждение" data-it="Termini e conferma cancellazione escursioni" data-es="Términos y confirmación de cancelación de excursiones" data-de="Stornierungsbedingungen und Bestätigung für Ausflüge" data-fr="Conditions d'annulation des excursions" data-ar="شروط إلغاء الرحلات والإقرار">Excursion cancellation terms and acknowledgment</p>
+                <span class="card-arrow" data-en="Start →" data-ru="Начать →" data-it="Inizia →" data-es="Empezar →" data-de="Start →" data-fr="Commencer →" data-ar="← ابدأ">Start →</span>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Red Sea Diving Safari — <a href="https://www.redsea-divingsafari.com" target="_blank">www.redsea-divingsafari.com</a> — info@redsea-divingsafari.com</p>
+    </footer>
+
+    <script src="lang.js"></script>
+</body>
+</html>
